@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeless Tales</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="game2.js" defer></script>
+</head>
+<body>
+    <div class="game-container" id="gameContainer">
+        <h1>Timeless Tales</h1>
+        
+        <div id="story" class="story"> 
+            <!-- This is where the story content will be dynamically generated -->
+        </div>
+
+        <div id="character" class="character"> 
+            <!-- Placeholder for character interaction -->
+            <img src="character.jpg" alt="Character" id="characterImage" /> 
+            <p id="characterDialogue">...</p> 
+            <button onclick="respondToCharacter('friendly')">Be friendly</button>
+            <button onclick="respondToCharacter('hostile')">Be hostile</button>
+        </div>
+    </div>
+</body>

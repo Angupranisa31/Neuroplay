@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #3a6186, #89253e);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.game-container {
+    position: relative;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    max-width: 1000px; 
+    width: 80%;  /* New property to adjust size */
+    margin: auto; /* Ensure centering */
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 48px; /* Increase title size */
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.story {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px; /* Larger font size for better readability */
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(45deg, #f54ea2, #ff7676);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 25px; /* Adjusted padding */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px; /* Increased margin between buttons */
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.character {
+    display: block;
+    position: absolute;
+    bottom: 20px; /* Adjust position for better visibility */
+    right: 20px; /* Changed position to avoid overlapping with story */
+    background: rgba(255, 255, 255, 0.9); /* Slightly less opaque for readability */
+    padding: 20px; /* Adjusted padding for consistency */
+    border-radius: 10px; /* Adjust border radius */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
+    font-size: 16px; /* Adjusted font size */
+}
+
+.character img {
+    width: 100px; /* Smaller image for balance */
+    height: 100px;
+    border-radius: 50%; /* Keep it circular */
+    margin-bottom: 10px; /* Adjusted spacing */
+}
+
+.character p {
+    text-align: center; /* Center text for alignment */
+}
+
+.character button {
+    background: linear-gradient(to right, #f54ea2, #ff7676);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px; /* Smaller padding for balance */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px; /* Adjusted spacing */
+}
+
+.character button:hover {
+    transform: scale(1.1); /* Simple hover effect */
+}
